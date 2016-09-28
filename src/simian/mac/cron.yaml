@@ -32,7 +32,7 @@ cron:
 - description: Update Average Install Durations used in pkg descriptions (1h-6h)
   url: /cron/maintenance/update_avg_install_durations
   schedule: every 6 hours
-
+o
 - description: PackageInfo and Blobstore integrity verification (1h-24h)
   url: /cron/maintenance/verify_packages
   schedule: every 12 hours
@@ -47,33 +47,33 @@ cron:
 
 - description: Stats Summary Cache for main web UI page (30m-24h)
   url: /cron/reports_cache/summary
-  schedule: every 4 hours
+  schedule: every 30 minutes
 
 - description: Install Counts Cache for Package Admin UI (15m-3h)
   url: /cron/reports_cache/installcounts
-  schedule: every 1 hours
+  schedule: every 30 minutes
 
 - description: Pending Counts Cache for Package Admin UI (15m-3h)
   url: /cron/reports_cache/pendingcounts
-  schedule: every 1 hours
+  schedule: every 30 minutes
 
 - description: Trending Installs - 24 hours (2h-6h)
   url: /cron/reports_cache/trendinginstalls/24
-  schedule: every 4 hours
+  schedule: every 2 hours
 
 - description: Trending Installs - 1 hour (15m-1h)
   url: /cron/reports_cache/trendinginstalls/1
-  schedule: every 1 hours
+  schedule: every 30 minutes
 
 - description: MSU User Logs Summary - all (15m-1h)
   url: /cron/reports_cache/msu_user_summary
-  schedule: every 24 hours
+  schedule: every 12 hours
 
 - description: MSU User Logs Summary - 1 day (1h-24h)
   url: /cron/reports_cache/msu_user_summary/1
-  schedule: every 2 hours
+  schedule: every 1 hours
 
 - description: MSU User Logs Summary - 7 days (12h-48h)
   url: /cron/reports_cache/msu_user_summary/7
-  schedule: every 24 hours
+  schedule: every 12 hours
 

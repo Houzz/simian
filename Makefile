@@ -11,7 +11,8 @@ MUNKI_VERSION=2.5.1.2630
 MUNKI=munkitools-${MUNKI_VERSION}
 MUNKIFILE=${MUNKI}.pkg
 PYTHON_VERSION=2.7
-PYTHON=$(shell type -p python${PYTHON_VERSION})
+#PYTHON=$(shell type -p python${PYTHON_VERSION})
+PYTHON=/usr/bin/python2.7
 TS=$(shell date '+%s')
 BUILD_VERSION=$(shell (git rev-parse HEAD 2>/dev/null || echo ${SIMIAN_VERSION} | tr '.' '-') | cut -c1-12)
 
